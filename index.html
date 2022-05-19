@@ -4,39 +4,380 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Estilos/Estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Inmobiliaria Colibríes</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="" type="text/css" rel="Stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>Inmobiliaria Colibries</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container container--flex">
-            <div class="main-header__title">
-                <h1 class="main-header__title">Inmobiliaria Colibríes</h1>
-                <span> <i class="fa-solid fa-bars"> </i></span>
-                <nav class="main-nav">
-                    <ul>
-                        <li class="menu__item"><a href="" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Features</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Shop</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">Colibries.</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="https://www.google.com" target="_blank">Properties</a></li>
+                        <li><a href="#">Agents</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
             </div>
-            <div class="main-header__container">
-                <span class="main-header__txt">need help</span>
-                <p class="main-header__txt">call 12334567890</p>
+        </header>
+
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Buy and sell real estate properties</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eveniet!</p>
             </div>
-            <div class="main-header__container">
-                <i class="fa-solid fa-user"></i>
-                <a href="">My cart<i class="fa-solid fa-cart-shopping"></i></a>
-                <input type="search" ><i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+    </div>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="flex">
+                <div>
+                    <span class="fas fa-home"></span>
+                    <h4>Find a Property</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique?</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-dollar-sign"></span>
+                    <h4>Buy a Property.</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, fuga.</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-chart-line"></span>
+                    <h4>Investing</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quas.</p>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
+    <section id="properties">
+        <div class="container">
+            <h2>Properties</h2>
+            <div id="properties-slider" class="slick">
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1">
+                    <div class="Property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            Camino Cibils 4920, Montevideo, Uy.
+                        </address>
+                    </div>
+                </div>
 
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg" alt="Property 2">
+                        <div class="property-details">
+                            <p class="price">$3,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                Camino Cibils 4920, Montevideo, Uy.
+                            </address>
+                        </div>
+                </div>
+            
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 3">
+                        <div class="property-details">
+                            <p class="price">$3,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                Camino Cibils 4920, Montevideo, Uy.
+                            </address>
+                        </div>
+                </div>
 
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 4">
+                        <div class="property-details">
+                            <p class="price">$3,400,000</p>
+                            <span class="beds">6 beds</span>
+                            <span class="baths">4 baths</span>
+                            <span class="sqft">4,250 sqft.</span>
+                            <address>
+                                Camino Cibils 4920, Montevideo, Uy.
+                            </address>
+                        </div>
+                </div>
+
+                <div>
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 5" />
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <button class="rounded">View All Property Listings</button>
+        </div>
+    </section>
+
+    <section id="agents">
+        <div class="container">
+            <h2>Agents</h2>
+            <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis quas magni minus aliquam eius.</p>
+
+            <div class="flex">
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_1.jpg" alt="Realtor 1">
+                    <h3>Tamara</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_2.jpg" alt="Realtor 2">
+                    <h3>Pablo</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_3.jpg" alt="Realtor 3">
+                    <h3>Gabriel</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_4.jpg" alt="Realtor 4">
+                    <h3>Valentin</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Realtor 5">
+                    <h3>Janel</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_6.jpg" alt="Realtor 6">
+                    <h3>Juan</h3>
+                    <p>Real Estate Agent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="the-best">
+        <div class="flex container">
+            <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1">
+            <h2>We Are the Best Real Estate Company</h2>
+            <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolorum.</p>
+            <div>
+                <ul>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                    <li>Placeat maxime animi minus</li>
+                </ul>
+                <button class="rounded">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>services</h2>
+            <div class="flex">
+                <div>
+                    <div class="fas fa-home"></div>
+                    <div class="services-card-right">
+                        <h3>Buy Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quo!</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-dollar-sign"></div>
+                    <div class="services-card-right">
+                        <h3>Buy Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, recusandae!</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-chart-line"></div>
+                    <div class="services-card-right">
+                        <h3>Investing</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, repellat?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-building"></div>
+                    <div class="services-card-right">
+                        <h3>List a Property</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, blanditiis?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-search"></div>
+                    <div class="services-card-right">
+                        <h3>Property Locator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fas fa-mobile-alt"></div>
+                    <div class="services-card-right">
+                        <h3>Stated Apps</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, pariatur.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Are Saying</h2>
+            <div id="testimonials-slider">
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit, sint ad asperiores commodi velit itaque provident autem dicta voluptates ipsam nobis veritatis delectus suscipit rem laborum, totam consequuntur illum."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_7.jpg" alt="Client 7">
+                        <p>Armando</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci molestias ab quae laudantium deleniti atque unde ipsum laboriosam, aliquam nesciunt. Delectus qui facilis enim repudiandae exercitationem nesciunt sequi asperiores eligendi."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Client 8">
+                        <p>Barry</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum vitae explicabo dolore ratione. Quia iure quod ipsa blanditiis sint nulla a nam veritatis ex eos. Dicta molestiae dolorum laudantium."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_8.jpg" alt="Client 9" />
+                        <p>Lorena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="flex">
+                <div id="form-container">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write Your message here.."></textarea>
+
+                        <button class="rounded">Send Message</button>
+                    </form>
+                </div>
+                
+                <div id="adress-container">
+                    <label>Adress</label>
+                    <address>
+                        Camino Cibils 4920, Montevideo, Uy.
+                    </address>
+
+                    <label>Phone</label>
+                    <a href="#">096-609-079</a>
+
+                    <label>Email Address</label>
+                    <a href="#">Bios.Nahuel@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email">
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Created for | Matea 2022.
+        </small>
+    </footer>
 </body>
 </html>
