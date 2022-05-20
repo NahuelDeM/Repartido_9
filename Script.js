@@ -29,3 +29,4 @@ function objetos(traelascasas){
     
     document.getElementById("properties-slider").innerHTML = todojunto
 }
+
